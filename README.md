@@ -28,5 +28,5 @@ npm start
 [lomi525/api-tutorial/releases](https://github.com/lomi525/api-tutorial/releases)
 
 
-##문의사항
+## 문의사항
 [lomi525/api-tutorial/issues](https://github.com/lomi525/api-tutorial/issues)
