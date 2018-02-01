@@ -1,0 +1,48 @@
+{
+  "name": "api-tutorial",
+  "version": "1.0.0",
+  "description": "1",
+  "main": "main.js",
+  "scripts": {
+    "debug": "env APP_ENV=false electron .",
+    "start": "env APP_ENV=true electron .",
+    "build": "build -p always",
+    "win": "build --win",
+    "mac": "build --mac"
+  },
+  "author": "lomi525",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.11",
+    "electron-builder": "^19.47.1"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "build": {
+    "appId": "app.lomi525.apitutorial",
+    "productName": "Api Tutorial",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/heart.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "lomi525",
+          "repo": "api-tutorial",
+          "token": "6246674a5b98f8220accfe923376eef400d758fa"
+        }
+      ]
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/heart.ico"
+    },
+    "squirrelWindows": {
+      "iconUrl": "https://raw.githubusercontent.com/megahertz/electron-simple-updater/master/example/build/icon.ico"
+    }
+  }
+}
